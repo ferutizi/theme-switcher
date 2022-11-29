@@ -7,6 +7,6 @@
     cursor: pointer;
     box-shadow: 2px 2px 3px #000;
     &.dark {
-        border-color: #eee;
+        border-color: $background-light;
     }
 }

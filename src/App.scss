@@ -1,4 +1,5 @@
 @import './scss/mixins';
+@import './scss/variables';
 
 .container {
     height: calc(100vh - 4rem);
@@ -15,12 +16,12 @@
 
 .dark {
     color: #eee;
-    background-color: #000;
+    background-color: $text-light;
 }
 
 .light {
-    color: #000;
-    background-color: #eee;
+    color: $text-light;
+    background-color: $background-light;
 }
 
 .button {

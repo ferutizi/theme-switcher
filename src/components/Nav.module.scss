@@ -1,4 +1,5 @@
 @import '../scss/mixins';
+@import '../scss/variables';
 
 .nav__container {
     display: flex;
@@ -18,15 +19,16 @@
 }
 
 .section:hover {
-    background-color: #eee;
+    background-color: $background-light;
+    transition: all ease-in-out 0.3s;
     &.dark {
-        background-color: #000;
+        background-color: $background-dark;
     }
 }
 
 .dark {
-    color: #eee;
-    background-color: #222228;
+    color: $text-dark;
+    background-color: $background-dark;
 }
 
 .button {
