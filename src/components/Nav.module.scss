@@ -22,7 +22,7 @@
     background-color: $background-light;
     transition: all ease-in-out 0.3s;
     &.dark {
-        background-color: $background-dark;
+        background-color: $background-dark-app;
     }
 }
 
@@ -32,5 +32,5 @@
 }
 
 .button {
-    @include btnPrimary;
+    @include btnPrimary(6em, 2.2em);
 }
