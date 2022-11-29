@@ -1,3 +1,5 @@
+@import '../scss/mixins';
+
 .nav__container {
     display: flex;
     justify-content: space-around;
@@ -17,9 +19,16 @@
 
 .section:hover {
     background-color: #eee;
+    &.dark {
+        background-color: #000;
+    }
 }
 
 .dark {
     color: #eee;
     background-color: #222228;
+}
+
+.button {
+    @include btnPrimary;
 }

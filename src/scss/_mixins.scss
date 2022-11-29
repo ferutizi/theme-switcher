@@ -1,0 +1,12 @@
+@mixin btnPrimary($width: 8em, $height: 3em) {
+    width: $width;
+    height: $height;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000;
+    &.dark {
+        border-color: #eee;
+    }
+}
