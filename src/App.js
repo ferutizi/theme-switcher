@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './App.scss';
 
 function App() {
   const  [theme, setTheme] = useState('dark');
@@ -10,9 +11,11 @@ function App() {
 
   return (
     <>
-      <div className='container'>
-        <h1 className={theme}>Theme Switcher</h1>
-        <button onClick={() => changeTheme(theme)}>{theme === 'dark' ? 'light' : 'dark'}</button>
+      <div className={`container ${theme}`}>
+        <h1 className={`title ${theme}`}>Theme Switcher</h1>
+        <button className={`button ${theme}`} onClick={() => changeTheme(theme)}>
+          {theme === 'dark' ? 'Light' : 'Dark'}
+        </button>
       </div>
     </>
   );

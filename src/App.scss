@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.button {
+    width: 8em;
+    height: 3em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.dark {
+    color: #eee;
+    background-color: #000;
+}
+
+.light {
+    color: #000;
+    background-color: #eee;
+}
+
+.button.dark{
+    border-color: #eee;
+}
