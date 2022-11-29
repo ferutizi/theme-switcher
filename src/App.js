@@ -1,5 +1,6 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from './context/ThemeContext';
+import Nav from './components/Nav';
 import './App.scss';
 
 function App() {
@@ -7,11 +8,11 @@ function App() {
 
   const changeTheme = () => {
     theme === 'dark' ? setTheme('light') : setTheme('dark');
-    console.log(theme)
   }
 
   return (
     <>
+      <Nav />
       <div className={`container ${theme}`}>
         <h1 className={`title ${theme}`}>Theme Switcher</h1>
         <button className={`button ${theme}`} onClick={() => changeTheme(theme)}>
