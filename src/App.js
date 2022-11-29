@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
 import './App.scss';
 
 function App() {
-  const  [theme, setTheme] = useState('dark');
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const changeTheme = () => {
     theme === 'dark' ? setTheme('light') : setTheme('dark');
